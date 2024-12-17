@@ -123,6 +123,19 @@ header {
 		font-size: 2em;
 	}
 }
+#langswitch {
+	opacity: 0.75;
+	position: absolute;
+	top: 0;
+	width: 3.5em;
+	right: 0;
+	margin: 0.75em;
+	box-shadow: 2px 2px 4px #000000;
+	z-index: 999;
+	transition: opacity 0.2s;
+} #langswitch:hover {
+	opacity: 1;
+}
 /* Style and position content, animation supporting all browsers  */
 #content {
 	will-change: transform;
