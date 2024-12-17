@@ -50,7 +50,7 @@ body {
 }
 /* Specify background image and style it*/
 #back {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/back.webp");
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/back.webp");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
