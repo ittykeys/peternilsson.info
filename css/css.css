@@ -123,6 +123,7 @@ header {
 		font-size: 2em;
 	}
 }
+/* Style and position language switcher */
 #langswitch {
 	opacity: 0.75;
 	position: absolute;
@@ -133,6 +134,8 @@ header {
 	box-shadow: 2px 2px 4px #000000;
 	z-index: 999;
 	transition: opacity 0.2s;
+	filter: brightness(0.75);
+/* Animate language switcher */
 } #langswitch:hover {
 	opacity: 1;
 }
