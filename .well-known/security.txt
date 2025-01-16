@@ -1,0 +1,4 @@
+Contact: mailto:peter@peternilsson.info
+Contact: mailto:pidde@pidde.st
+Preferred-Languages: en, se
+Canonical: https://peternilsson.info/.well-known/security.txt

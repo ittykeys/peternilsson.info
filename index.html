@@ -1,0 +1,130 @@
+<!--
+    File: index.html
+    Author: Peter Nilsson (@ittykeys)
+    Date: April 2, 2024
+    License: © 2024 Peter Nilsson, released under the GPLv3 License. See LICENSE file for details.
+    Description: Main html, Swedish
+-->
+
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+        <!-- Specify encoding -->
+        <meta charset="UTF-8" />
+        <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','<!--#echo var="TM_ID" -->');
+            </script>
+        <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src='https://www.googletagmanager.com/gtag/js?id=<!--#echo var="GA_ID" -->'></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '<!--#echo var="GA_ID" -->');
+            </script>
+        <!-- End Global site tag (gtag.js) - Google Analytics -->
+        <title>Peter Nilsson</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Cache-control" content="public, no-cache" />
+        <meta http-equiv="Content-Security-Policy" content="script-src 'none'" />
+        <!-- SEO stuff -->
+		<meta name="description" content="Peter Nilssons hemsida" />
+		<meta name="keywords" content="peternilsson.info, Peter Nilsson, Peter Nilsson Info, Peter, Nilsson, Systemadministratör, Sysadmin, Systems, Systems administrator, administratör, devops, developer, utvecklare" />
+		<meta name="author" content="Peter Nilsson" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="robots" content= "index, follow">
+        <!-- Support all screen sizes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+        <!-- Some browsers use this to style the adress bar -->
+        <meta name="theme-color" content="#000000">
+        <!-- Load all the stuff -->
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="apple-touch-icon" href="img/icon.png"/>
+		<link rel="icon" href="img/icon.ico" type="image/x-icon" />
+        <link rel="preload" href="fonts/TrebuchetMS.woff2" as="font" type="font/ttf" crossorigin="anonymous" />
+        <link rel="manifest" href="manifest.json">
+	</head>
+	<body>
+        <div id="back">
+            <!-- Google Tag Manager (noscript) -->
+                <noscript>
+                    <iframe src='https://www.googletagmanager.com/ns.html?id=<!--#echo var="TM_ID" -->'
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+            <!-- Just here for SEO purposes -->
+            <h1>Peter Nilsson</h1>
+            <h1>Peter Nilssons hemsida</h1>
+            <!-- Header with logo and links -->
+            <header>
+                <a href="#about" id="name">
+                    Peter Nilsson
+                </a>
+                <!-- Anchorlinks in header -->
+                <div id="links">
+                    <a href="#linkpage" title="Gå till Länkar">Länkar</a>
+                    <a href="#resume" title="Gå till CV">CV</a>
+                </div>
+            </header>
+            <a href="en"><img id="langswitch" src="img/us.svg" alt="US flag" title="Switch to English"></a>
+            <!-- Display the content in a wrapper -->
+            <div id="content">
+                <div id="linkpage">
+                   <p>
+                        <a href="https://www.linkedin.com/in/pidde1/" target="_blank">
+                            <img src="img/links/linkedin.svg" height="100px" width="100px" alt="LinkedIn logo" title="Länk till Peters profil på LinkedIn" />
+                        </a>
+                        <a href="mailto:peter@peternilsson.info" target="_blank">
+                            <img src="img/links/mail.svg" height="100px" width="100px" alt="Mailikon" title="Maila Peter Nilsson" />
+                        </a>
+                        <a href="https://t.me/PeterNilsson" target="_blank">
+                            <img src="img/links/telegram.svg" height="90px" width="90px" alt="Telegram logo" title="Länk till Peters profil på Telegram" />
+                        </a>
+                        <a href="https://join.skype.com/invite/xfPxgjrmBJVc" target="_blank">
+                            <img src="img/links/skype.svg" height="90px" width="90px" alt="Skype logo" title="Länk till Peters profil på Skype" />
+                        </a>
+                        <a href="https://github.com/ittykeys" target="_blank">
+                            <img src="img/links/github.svg" height="90px" width="90px" alt="GitHub logo" title="Länk till Peters profil på Github" />
+                        </a>
+                        <a href="https://twitter.com/ittykeys" target="_blank">
+                            <img src="img/links/twitter.svg" height="90px" width="90px" alt="Twitter logo" title="Länk till Peters profil på Twitter" />
+                        </a>
+                        <a href="https://ittykeys.com" target="_blank">
+                            <img src="img/links/ittykeys.svg" height="90px" width="90px" alt="IttyKeys logo" title="Länk till IttyKeys hemsida" />
+                        </a>
+                   </p>
+                </div>
+                <div id="resume">
+                    <object data="https://cdn.peternilsson.info/PeterNilsson_Resume_Swedish.pdf" type="application/pdf" width="100%">
+                        <p>Din webbläsare kan inte visa pdf:er, <a href="https://cdn.peternilsson.info/PeterNilsson_Resume_Swedish.pdf">hämta</a> den istället!</p>
+                    </object>
+                    <iframe src="https://docs.google.com/gview?url=https://cdn.peternilsson.info/PeterNilsson_Resume_Swedish.pdf&embedded=true" width="100%">
+                        <p>Din webbläsare kan inte visa pdf:er, <a href="https://cdn.peternilsson.info/PeterNilsson_Resume_Swedish.pdf">hämta</a> den istället!</p>
+                    </iframe>
+                </div>
+                <div id="about">
+                    <p>
+                        Stresstålig, driven och antar alltid nya utmaningar.<br>
+                        Oftast hittar du mig i studion<br>eller sysslandes med diverse <a href="https://github.com/ittykeys" target="_blank" title="Länk till Peters profil på Github">IT-projekt</a>.
+                    </p>
+                </div>
+            </div>
+            <!-- Footer with © notice -->
+            <footer>
+                <!-- © notice and relevant contact -->
+                <p>
+                    © 2022 - <!--#echo var="YEAR" -->
+                    <a href="mailto:peter@peternilsson.info" title="Maila Peter Nilsson" target="_blank">Peter Nilsson</a>
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" title="Länk till GNU General Public License på gnu.org" target="_blank"
+                    rel="noopener">(GPL 3)</a>
+                </p>
+            </footer>
+        </div>
+	</body>
+</html>

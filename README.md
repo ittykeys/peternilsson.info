@@ -1,10 +1,10 @@
-# Template
+# peternilsson.info
 
-Template
+## Description
 
-**Clone the repository (ssh):**
+My personal site.
 
-```bash
-git clone git@oregon01:global/template.git
-cd template
-```
+Live version at [peternilsson.info](https://peternilsson.info)
+
+## License
+This project is licensed under the GNU General Public License - see the [License file](LICENSE) file for details..

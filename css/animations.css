@@ -1,0 +1,76 @@
+/*
+ * File: animations.css
+ * Author: Peter Nilsson (@ittykeys)
+ * Date: April 2, 2024
+ * License: © 2024 Peter Nilsson, released under the GPLv3 License. See LICENSE file for details.
+ * Description: Css file for animations
+ */
+
+/* comeDown animation, support all browsers */
+@keyframes comeDown {
+	from {transform: translateY(-5em);}
+	to {transform: translateY(0);}
+} @-webkit-keyframes comeDown {
+	from {transform: translateY(-5em);}
+	to {transform: translateY(0);}
+} @-moz-keyframes comeDown {
+	from {transform: translateY(-5em);}
+	to {transform: translateY(0);}
+} @-ms-keyframes comeDown {
+	from {transform: translateY(-5em);}
+	to {transform: translateY(0);}
+} @-o-keyframes comeDown {
+	from {transform: translateY(-5em);}
+	to {transform: translateY(0);}
+}
+/* comeUp animation, support all browsers */
+@keyframes comeUp {
+	from {transform: translateY(2em);}
+	to {transform: translateY(0);}
+} @-webkit-keyframes comeUp {
+	from {transform: translateY(2em);}
+	to {transform: translateY(0);}
+} @-moz-keyframes comeUp {
+	from {transform: translateY(2em);}
+	to {transform: translateY(0);}
+} @-ms-keyframes comeUp {
+	from {transform: translateY(2em);}
+	to {transform: translateY(0);}
+} @-o-keyframes comeUp {
+	from {transform: translateY(2em);}
+	to {transform: translateY(0);}
+}
+/* fadeIn animation, support all browsers */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} @-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} @-ms-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} @-o-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* comeSide animation, support all browsers */
+@keyframes comeSide {
+	from {transform: translateX(-5em);}
+	to {transform: translateX(0);}
+} @-webkit-keyframes comeSide {
+	from {transform: translateX(-5em);}
+	to {transform: translateX(0);}
+} @-moz-keyframes comeSide {
+	from {transform: translateX(-5em);}
+	to {transform: translateX(0);}
+} @-ms-keyframes comeSide {
+	from {transform: translateX(-5em);}
+	to {transform: translateX(0);}
+} @-o-keyframes comeSide {
+	from {transform: translateX(-5em);}
+	to {transform: translateX(0);}
+}

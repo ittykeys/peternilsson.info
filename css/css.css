@@ -1,0 +1,240 @@
+/*
+ * File: css.css
+ * Author: Peter Nilsson (@ittykeys)
+ * Date: April 2, 2024
+ * License: © 2024 Peter Nilsson, released under the GPLv3 License. See LICENSE file for details.
+ * Description: Main css file for site
+ */
+
+/* Import our animations */
+@import "animations.css";
+/* Provide font options */
+@font-face {
+	font-family: 'Trebuchet';
+	src: url('../fonts/TrebuchetMS.woff2'), local('Verdana'), local('Arial'), local('sans');
+	font-display: swap;
+}
+/* Reset browser global defaults and set our own */
+* {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-family: Trebuchet;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-weight: normal;
+	font-style: unset;
+	text-shadow: 2px 2px 4px #000000;
+/* I don't like scrollbars */
+	scrollbar-width: none;
+} ::-webkit-scrollbar {
+	display: none;
+}
+/* Smaller font for smaller screens */
+@media (max-width: 50rem) {
+	footer {
+		font-size: 0.6em;
+	}
+}
+/* Fade in page and make it fixed */
+body {
+	background-color: #000000;
+	-webkit-animation: fadeIn 0.75s;
+	-moz-animation: fadeIn 0.75s;
+	-ms-animation: fadeIn 0.75s;
+	-o-animation: fadeIn 0.75s;
+	animation: fadeIn 0.75s;
+	position: fixed;
+}
+/* Specify background image and style it*/
+#back {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/back.webp");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+/* Different position for smaller screens */
+} @media (max-width: 50rem) {
+	#back {
+		background-position: 60% 0%;
+	}
+}
+/* Animate all links */
+a:link, a:visited {
+	color: #FFFFFF;
+	transition: 0.2s;
+} a:hover, a:focus {
+	color: #D5D5D5;
+} a:active {
+	color: #FFFFFF;
+}
+/* Fix clickable area of images with links*/
+a {
+	display: inline-block;
+}
+/* Hide h1 */
+h1 {
+	display: none;
+}
+/* In order to postion images correctly */
+img {
+	display: block;
+}
+/* Style and position sticky header with animation supporting all browsers */
+header {
+	z-index: 999;
+	-webkit-animation: comeDown 0.5s;
+	-moz-animation: comeDown 0.5s;
+	-ms-animation: comeDown 0.5s;
+	-o-animation: comeDown 0.5s;
+	animation: comeDown 0.5s;
+	top: 0;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	position: -webkit-sticky;
+	position: sticky;
+/* Style and position links */
+} header #name {
+	font-size: 2.5em;
+} header #links {
+	width: 50vw;
+	font-size: 1.65em;
+	display: flex;
+	padding-top: 0.5em;
+/* Position link items */
+} header #links a {
+	width: 5em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+/* Auto width and small font for smaller screens */
+@media (max-width: 50rem) {
+	header #links {
+		font-size: 1.4em;
+		width: auto;
+	}
+	header #name {
+		font-size: 2em;
+	}
+}
+/* Style and position language switcher */
+#langswitch {
+	opacity: 0.75;
+	position: absolute;
+	top: 0;
+	width: 3.5em;
+	right: 0;
+	margin: 0.75em;
+	box-shadow: 2px 2px 4px #000000;
+	z-index: 999;
+	transition: opacity 0.2s;
+	filter: brightness(0.75);
+/* Animate language switcher */
+} #langswitch:hover {
+	opacity: 1;
+}
+/* Style and position content, animation supporting all browsers  */
+#content {
+	will-change: transform;
+	-webkit-animation: comeSide 0.5s;
+	-moz-animation: comeSide 0.5s;
+	-ms-animation: comeSide 0.5s;
+	-o-animation: comeSide 0.5s;
+	animation: comeSide 0.5s;
+	width: 40vw;
+}
+/* Padding for smaller screens*/
+@media (max-width: 50rem) {
+	#content {
+		width: 85vw;
+		padding: 0;
+	}
+}
+/* Make links functional, style sections, we want all sections to take up 100% of the height available */
+#content {
+	line-height: 2;
+	font-size: 1.5em;
+} @media (max-width: 50rem) {
+	#content {
+		font-size: 1.25em;
+	}
+} #content div {
+	display: none;
+} #content div:target {
+	height: 100vh;
+	display: flex;
+	-webkit-animation: fadeIn 0.5s;
+	-moz-animation: fadeIn 0.5s;
+	-ms-animation: fadeIn 0.5s;
+	-o-animation: fadeIn 0.5s;
+	animation: fadeIn 0.5s;
+} #linkpage, #resume, #about {
+	transform: translateY(-15%);
+	flex-direction: column;  
+	justify-content: center;
+	overflow: scroll;
+} #resume iframe {
+	display: none;
+} #resume iframe p {
+	transform: translateY(-15%);
+	flex-direction: column;  
+	justify-content: center;
+	overflow: scroll;
+} #resume object p {
+	transform: translateY(-15%);
+	flex-direction: column;  
+	justify-content: center;
+	overflow: scroll;
+} #resume object {
+	transform: translateY(7.5%);
+	height: 80vh;	
+} @media (max-width: 50rem) {
+	#resume object {
+		display: none;
+	} #resume iframe {
+		transform: translateY(5%);
+		display: block;
+		height: 75vh;
+	} #resume iframe p {
+		transform: translateY(-15%);
+		flex-direction: column;  
+		justify-content: center;
+		overflow: scroll;
+	}
+} #resume a, #about a, #linkpage a {
+	text-decoration: underline;
+} #linkpage a {
+	padding: 1em;
+	opacity: 0.75;
+	transition: 0.2s;
+} #linkpage a:hover {
+	opacity: 1;
+} #content #about {
+	height: 100vh;
+	display: flex;
+	transform: translateY(-15%);
+	flex-direction: column;  
+	justify-content: center;
+	overflow: scroll;
+}
+/* Fixed footer at bottom of page */
+footer {
+	-webkit-animation: comeUp 0.5s;
+	-moz-animation: comeUp 0.5s;
+	-ms-animation: comeUp 0.5s;
+	-o-animation: comeUp 0.5s;
+	animation: comeUp 0.5s;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	font-size: 0.8em;
+	text-align: center;
+}
