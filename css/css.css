@@ -133,11 +133,12 @@ header {
 	margin: 0.75em;
 	box-shadow: 2px 2px 4px #000000;
 	z-index: 999;
-	transition: opacity 0.2s;
+	transition: opacity, filter 0.2s;
 	filter: brightness(0.75);
 /* Animate language switcher */
 } #langswitch:hover {
 	opacity: 1;
+	filter: brightness(1);
 }
 /* Style and position content, animation supporting all browsers  */
 #content {
@@ -176,24 +177,24 @@ header {
 	animation: fadeIn 0.5s;
 } #linkpage, #resume, #about {
 	transform: translateY(-15%);
-	flex-direction: column;  
+	flex-direction: column;
 	justify-content: center;
 	overflow: scroll;
 } #resume iframe {
 	display: none;
 } #resume iframe p {
 	transform: translateY(-15%);
-	flex-direction: column;  
+	flex-direction: column;
 	justify-content: center;
 	overflow: scroll;
 } #resume object p {
 	transform: translateY(-15%);
-	flex-direction: column;  
+	flex-direction: column;
 	justify-content: center;
 	overflow: scroll;
 } #resume object {
 	transform: translateY(7.5%);
-	height: 80vh;	
+	height: 80vh;
 } @media (max-width: 50rem) {
 	#resume object {
 		display: none;
@@ -203,7 +204,7 @@ header {
 		height: 75vh;
 	} #resume iframe p {
 		transform: translateY(-15%);
-		flex-direction: column;  
+		flex-direction: column;
 		justify-content: center;
 		overflow: scroll;
 	}
@@ -219,7 +220,7 @@ header {
 	height: 100vh;
 	display: flex;
 	transform: translateY(-15%);
-	flex-direction: column;  
+	flex-direction: column;
 	justify-content: center;
 	overflow: scroll;
 }
