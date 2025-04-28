@@ -107,11 +107,7 @@ header {
 	padding-top: 0.5em;
 /* Position link items */
 } header #links a {
-	width: 5em;
-	padding-right: 0.5em;
-	padding-left: 0.5em;
-	padding-top: 0.1em;
-	padding-bottom: 0.1em;
+	flex-basis: content;
 }
 /* Auto width and small font for smaller screens */
 @media (max-width: 50rem) {
@@ -211,7 +207,7 @@ header {
 } #resume a, #about a, #linkpage a {
 	text-decoration: underline;
 } #linkpage a {
-	padding: 1em;
+	margin: 1em;
 	opacity: 0.75;
 	transition: 0.2s;
 } #linkpage a:hover {
