@@ -235,3 +235,10 @@ footer {
 	font-size: 0.8em;
 	text-align: center;
 }
+/* Perl community announcements */
+#perl-ad-target, #perl-ad, #perl-ad-title, #perl-ad-desc, #perl-ad-link { display: block !important; }
+#perl-ad-target {
+	position: relative;
+	top: 10rem;
+	font-size: small;
+}
